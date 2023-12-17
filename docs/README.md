@@ -3,12 +3,14 @@
 
 Ez a Python alkalmazás egy egyszerű átváltó történelmi mértékegységek számára. Az alkalmazás felülette (jelenleg csak)
 magyar nyelvű, és főképp Ausztriához és Magyarországhoz kapcsolódó mértékegységrendszereket tartalmaz, csakúgy, mint az
-ókori görög és római mértékeket. Ugyanakkor bármely mértékegységrendszer bevezethető. Minden modern metrikus és
+ókori görög és római mértékeket, ugyanakkor bármely mértékegységrendszer bevezethető. Minden modern metrikus és
 angolszász mértékegység szerepel viszonyítás végett. A mértékegységváltó a Tkinter GUI eszközkészletet használja ttk
 ablakelemekkel.
 
 Minden információ megbízható szakirodalmi forrásból származik, és eredetük a forráskódban jelölve van. A felhasznált
 irodalom listája megtalálható a "docs/Sources.md" fájlban.
+
+Az új mértékegység-rendszerek hozzáadása folyamatos.
 
 **NB. Ez az első programozási projektem bármilyen nyelven.**
 
@@ -24,7 +26,9 @@ and Roman measurements. However, any unit system can be implemented. All modern 
 added for reference. The converter uses the Tkinter GUI toolkit with ttk widgets.
 
 All information is based on reliable academic literature, and their origin is indicated in the source code. The list of
-consulted sources can be found in the "docs\Sources.md" file.
+consulted sources can be found in the "docs/Sources.md" file.
+
+New unit systems are continuously added.
 
 **NB. This is my first ever coding project in any language.**
 

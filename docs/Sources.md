@@ -1,9 +1,6 @@
-<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.1//EN" "http://www.w3.org/TR/xhtml11/DTD/xhtml11.dtd">
-<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en">
-<head>
-<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
-<title>Sources</title>
-</head>
+
+## Hivatkozott szakirodalom - Cited works ##
+
 <body>
 <div class="csl-bib-body" style="line-height: 1.35; margin-left: 2em; text-indent:-2em;">
   <div class="csl-entry">Bogdán, István. <i>Magyarországi hossz- és földmértékek, 1601-1874</i>. A Magyar Országos Levéltár kiadványai. IV., Levéltártan és történeti forrástudományok. 6. Budapest: Akadémiai, 1990. <a href="https://library.hungaricana.hu/hu/view/MolDigiLib_MOLkiadv4_06/">https://library.hungaricana.hu/hu/view/MolDigiLib_MOLkiadv4_06/</a>.</div>
@@ -28,5 +25,5 @@
   <span class="Z3988" title="url_ver=Z39.88-2004&amp;ctx_ver=Z39.88-2004&amp;rfr_id=info%3Asid%2Fzotero.org%3A2&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Adc&amp;rft.type=document&amp;rft.title=The%20Units%20of%20Measurement%20Regulations%201995%20(1995%20No.%201804)&amp;rft.publisher=King's%20Printer%20of%20Acts%20of%20Parliament&amp;rft.description=These%20Regulations%20implement%20Council%20Directives%2071%2F354%2FEEC%20(OJ%20No.%20L243%2C%2029.10.71%2C%20p.29)%20and%2080%2F181%2FEEC%20(OJ%20No.%20L39%2C%2015.2.80%2C%20p.40)%20(%E2%80%9Cthe%20Directives%E2%80%9D)%20which%20relate%20to%20the%20use%20of%20units%20of%20measurement.&amp;rft.identifier=https%3A%2F%2Fwww.legislation.gov.uk%2Fuksi%2F1995%2F1804%2Fschedule%2Fmade&amp;rft.date=1995-07-13&amp;rft.language=English"></span>
   <div class="csl-entry">Vilmos, Pecz. <i>Ókori lexikon</i>. Hasonmás kiadás. Vol. I-II. 2 vols. Tudománytár. Budapest: Könyvértékesítő Vállalat, 1984. <a href="https://www.arcanum.com/hu/online-kiadvanyok/Lexikonok-okori-lexikon-CA894/">https://www.arcanum.com/hu/online-kiadvanyok/Lexikonok-okori-lexikon-CA894/</a>.</div>
   <span class="Z3988" title="url_ver=Z39.88-2004&amp;ctx_ver=Z39.88-2004&amp;rfr_id=info%3Asid%2Fzotero.org%3A2&amp;rft_id=urn%3Aisbn%3A978-963-02-2927-2&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Abook&amp;rft.genre=book&amp;rft.btitle=%C3%93kori%20lexikon&amp;rft.place=Budapest&amp;rft.publisher=K%C3%B6nyv%C3%A9rt%C3%A9kes%C3%ADt%C5%91%20V%C3%A1llalat&amp;rft.edition=Hasonm%C3%A1s%20kiad%C3%A1s&amp;rft.series=Tudom%C3%A1nyt%C3%A1r&amp;rft.aufirst=Pecz&amp;rft.aulast=Vilmos&amp;rft.au=Pecz%20Vilmos&amp;rft.date=1984&amp;rft.isbn=978-963-02-2927-2&amp;rft.language=Hungarian"></span>
-</div></body>
-</html>
+</div>
+</body>
