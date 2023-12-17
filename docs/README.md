@@ -8,7 +8,7 @@ angolszász mértékegység szerepel viszonyítás végett. A mértékegységvá
 ablakelemekkel.
 
 Minden információ megbízható szakirodalmi forrásból származik, és eredetük a forráskódban jelölve van. A felhasznált
-irodalom listája megtalálható a "docs\Sources.html" fájlban.
+irodalom listája megtalálható a "docs/Sources.md" fájlban.
 
 **NB. Ez az első programozási projektem bármilyen nyelven.**
 
@@ -24,7 +24,7 @@ and Roman measurements. However, any unit system can be implemented. All modern 
 added for reference. The converter uses the Tkinter GUI toolkit with ttk widgets.
 
 All information is based on reliable academic literature, and their origin is indicated in the source code. The list of
-consulted sources can be found in the "docs\Sources.html" file.
+consulted sources can be found in the "docs\Sources.md" file.
 
 **NB. This is my first ever coding project in any language.**
 

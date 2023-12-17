@@ -6,7 +6,7 @@ Part of the "Unit Converter for Historical Studies" project by OperaVaria.
 Measurement unit class.
 
 Sources for unit values and background information are cited in list files.
-List of cited works can be found in Sources.html.
+List of cited works can be found in "docs/Sources.md".
 """
 
 
