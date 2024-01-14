@@ -1,33 +1,30 @@
 """
-unit_class.py
+system_class.py
 
 Part of the "Unit Converter for Historical Studies" project by OperaVaria.
 
-Measurement unit class.
+Measurement unit system class.
 
 The sources of unit values and background information are cited in the database file (unit_database.db).
 The list of cited works can be found in "docs/Sources.md".
 """
 
 
-class Unit:
-    """All needed information about a measurement unit in Python object form."""
+class System:
+    """All needed information about a unit system in Python object form."""
 
-    # Creates a list for active Unit objects.
+    # Creates a list for active System objects.
     act_obj_list = []
 
-    def __init__(self, name, info, symbol, sys_dat, sys_gui, category, source, inter_val):
-        """Gives a Unit instance the necessary attributes,
+    def __init__(self, name_dat, name_gui, info, source, category):
+        """Gives a System instance the necessary attributes,
            and appends it to the active object list."""
-        self.name = name
+        self.name_data = name_dat
+        self.name = name_gui
         self.info = info
-        self.symbol = symbol
-        self.system_data = sys_dat
-        self.system = sys_gui
-        self.category = category
         self.source = source
-        self.inter_val = inter_val
-        Unit.act_obj_list.append(self)
+        self.category = category
+        System.act_obj_list.append(self)
 
 
 # Display message when accidentally run:

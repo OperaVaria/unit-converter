@@ -3,33 +3,33 @@ main.py
 
 Unit Converter for Historical Studies
 
-This Python app is a simple converter for historical measurement units. At the moment it has a Hungarian UI,
-and features historical unit systems mainly associated with Austria and Hungary, as well as the Ancien Greek
-and Roman measurements. However, any unit system can be implemented. All modern metric and Anglo-American units are
-added for reference. The converter uses the Tkinter GUI toolkit with ttk widgets.
+This Python app is a simple converter for historical measurement units. For the moment, the app it is only available
+with a Hungarian UI, and features historical unit systems mainly associated with Austria and Hungary, as well as the
+Ancient Greek and Roman measurements. However, any unit system can be implemented. All modern metric and Anglo-American
+units are added for reference. The converter uses the Tkinter GUI toolkit with ttk widgets, the unit database was
+built with the SQLite database engine.
 
 NB. This is my first ever coding project in any language.
 
 TODO: 1. Lost of testing, bug hunting, typo fixing.
-      2. Add more unit systems, especially volume.
-      3. Possibly implement an info page for more background information on
-         units and unit systems.
-      4. Possibly add coin weights.
-      5. Convert the unit database to a more suitable file type.
-      6. More appealing ttk theming.
-      7. Implement multi-language GUI.
+      2. Add more unit systems.
+      3. Possibly add coin weights.
+      4. Implement multi-language GUI.
 """
 
 # Metadata variables:
 __author__ = "OperaVaria"
-__contact__ = "lcs_it@gmail.com"
-__version__ = "0.0.1"
-__date__ = "2023.12.17"
+__contact__ = "lcs_it@proton.me"
+__version__ = "0.1.0"
+__date__ = "2024.01.14"
 
-# Written in: Python 3.11
+# Written in: Python 3.12
 # Tcl/Tk version 8.6
+# SQLite version 3.35.5
 # Encoding: UTF-8
-# Tested on Windows 10, 11, and Lubuntu 22.04 LTS (Tkinter looks absolutely hideous on LXQt)
+# Tested on Windows 10, 11, Ubuntu 23.10, and Lubuntu 22.04 LTS.
+
+# Important NB.: when needed, name collision is avoided with invisible characters U+1D173-77 in the database.
 
 # Licence:
 __license__ = "GPLv3"
