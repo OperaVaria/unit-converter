@@ -49,7 +49,7 @@ The app will soon be converted to a website, for better accessibility.
 
 ***
 
-## Instructions - Utasítások
+## Utasítások - Instructions
 
 A forráskód közvetlenül futtatható Python 3(.12) segítségével, a "main.pyw" indításával. Emellett egy kompilált Windows
 .exe és Linux binary release is elérhető.
@@ -64,6 +64,6 @@ The source code can be run directly with Python 3(.12) by launching "main.pyw". 
 Verziók/Versions: Python 3.12, Tcl/Tk 8.6, SQLite 3.35.5  
 Tesztelve/Tested on: Windows 10, 11, Ubuntu 23.10, Lubuntu 22.04 LTS
 
-[![License: GPL v3](https://img.shields.io/badge/License-GPLv3-blue.svg)](https://www.gnu.org/licenses/gpl-3.0)
-
 **[Elérhetőség/Contact](mailto:lcs_it@gmail.com)**
+
+[![License: GPL v3](https://img.shields.io/badge/License-GPLv3-blue.svg)](https://www.gnu.org/licenses/gpl-3.0)
