@@ -2,11 +2,13 @@
 disable=too-many-ancestors,
         too-many-arguments,
         too-many-instance-attributes,
+        too-few-public-methods,
+        too-many-statements,
         unnecessary-pass,
         useless-return,
         attribute-defined-outside-init,
         pointless-string-statement,
         line-too-long,
-        missing-class-docstring,
-        too-few-public-methods,
-        too-many-statements
+        wrong-import-position,
+        missing-class-docstring
+        
