@@ -8,4 +8,5 @@ disable=too-many-ancestors,
         pointless-string-statement,
         line-too-long,
         missing-class-docstring,
-        too-few-public-methods
+        too-few-public-methods,
+        too-many-statements
