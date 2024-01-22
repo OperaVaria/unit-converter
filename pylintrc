@@ -1,6 +1,6 @@
 [MESSAGES CONTROL]
-disable=line-too-long
-        wrong-import-position
+disable=line-too-long,
+        wrong-import-position,
         too-many-ancestors,
         too-many-arguments,
         too-many-instance-attributes,
