@@ -125,7 +125,8 @@ def set_output_sys_info(selection, calc_page):
 def drop_menu_config(option_menu):
     """Ttk.OptionMenu's drop-down menu needs to be configured every time.
        Done with a function for brevity’s sake."""
-    option_menu["menu"].config(bg="#E4E7EB", fg="#3E4C59", activebackground="#3E4C59", activeforeground="#E4E7EB",
+    option_menu["menu"].config(bg="#E4E7EB", fg="#3E4C59",
+                               activebackground="#3E4C59", activeforeground="#E4E7EB",
                                font=("Helvetica", 12))
     return
 
@@ -150,5 +151,5 @@ def calculate(calc_page):
 
 # Display message when accidentally run:
 if __name__ == "__main__":
-    print("This file is a module of the \"Unit Converter for Historical Studies\" project. Launch \"main.pyw\" to "
-          "start the app.")
+    print("This file is a module of the \"Unit Converter for Historical Studies\" project."
+          "Launch \"main.pyw\" to start the app.")

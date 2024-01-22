@@ -20,8 +20,8 @@ TODO: 1. Lost of testing, bug hunting, typo fixing.
 # Metadata variables:
 __author__ = "OperaVaria"
 __contact__ = "lcs_it@proton.me"
-__version__ = "0.1.0"
-__date__ = "2024.01.14"
+__version__ = "0.1.1"
+__date__ = "2024.01.22"
 
 # Written in: Python 3.12
 # Tcl/Tk version 8.6
@@ -33,7 +33,7 @@ __date__ = "2024.01.14"
 
 # Licence:
 __license__ = "GPLv3"
-__copyright__ = "Copyright © 2023, Csaba Latosinszky"
+__copyright__ = "Copyright © 2023-2024, Csaba Latosinszky"
 
 """
 This program is free software: you can redistribute it and/or modify it under the terms of the GNU General Public

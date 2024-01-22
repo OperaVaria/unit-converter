@@ -20,8 +20,10 @@ from tkinter import ttk
 from units.unit_class import Unit
 from functionality.window_class import Window
 from functionality.container_class import Container
-from functionality.functions import (set_act_objs, set_sys_name_list, set_input_menu, set_output_menu,
-                                     set_input_sys_info, set_output_sys_info, drop_menu_config, calculate)
+from functionality.functions import (set_act_objs, set_sys_name_list,
+                                     set_input_menu, set_output_menu,
+                                     set_input_sys_info, set_output_sys_info,
+                                     drop_menu_config, calculate)
 
 
 ###########
@@ -30,6 +32,7 @@ from functionality.functions import (set_act_objs, set_sys_name_list, set_input_
 
 
 class Menu(ttk.Frame):
+    """Unit converter main menu implemented az a Python class."""
     def __init__(self, window, parent, font):
         """Main menu widget structure to be placed into a parent container (frame)."""
         super().__init__(parent)
@@ -56,38 +59,46 @@ class Menu(ttk.Frame):
 
         # Buttons
         self.btn_length = ttk.Button(parent, text="Hosszúság",
-                                     command=lambda: switch_to_calculator(window, parent, "Hosszúság"))
+                                     command=lambda: switch_to_calculator(window, parent,
+                                                                          "Hosszúság"))
         self.btn_length.grid(row=2, column=0, columnspan=1)
 
         self.btn_mass = ttk.Button(parent, text="Terület",
-                                   command=lambda: switch_to_calculator(window, parent, "Terület"))
+                                   command=lambda: switch_to_calculator(window, parent,
+                                                                        "Terület"))
         self.btn_mass.grid(row=2, column=1, columnspan=1)
 
         self.btn_area = ttk.Button(parent, text="Súly",
-                                   command=lambda: switch_to_calculator(window, parent, "Súly"))
+                                   command=lambda: switch_to_calculator(window, parent,
+                                                                        "Súly"))
         self.btn_area.grid(row=2, column=2, columnspan=1)
 
         self.btn_dimensionless = ttk.Button(parent, text="Darabmérték",
-                                            command=lambda: switch_to_calculator(window, parent, "Darabmérték"))
+                                            command=lambda: switch_to_calculator(window, parent,
+                                                                                 "Darabmérték"))
         self.btn_dimensionless.grid(row=3, column=0, columnspan=1)
 
         self.btn_volume = ttk.Button(parent, text="Szárazmérték",
-                                     command=lambda: switch_to_calculator(window, parent, "Szárazmérték"))
+                                     command=lambda: switch_to_calculator(window, parent,
+                                                                          "Szárazmérték"))
         self.btn_volume.grid(row=3, column=1, columnspan=1)
 
         self.btn_capacity = ttk.Button(parent, text="Folyadékmérték",
-                                       command=lambda: switch_to_calculator(window, parent, "Folyadékmérték"))
+                                       command=lambda: switch_to_calculator(window, parent,
+                                                                            "Folyadékmérték"))
         self.btn_capacity.grid(row=3, column=2, columnspan=1)
 
         self.btn_exit = ttk.Button(parent, text="Kilépés", command=window.destroy)
         self.btn_exit.grid(row=4, column=0, columnspan=3)
 
         # Version number widget
-        self.lbl_version = ttk.Label(parent, text="v0.1.0 - Alpha", font=(font, 18))
+        self.lbl_version = ttk.Label(parent, text="v0.1.1 - Alpha", font=(font, 18))
         self.lbl_version.grid(row=5, column=0, columnspan=3)
 
 
 class CalculatorPage(ttk.Frame):
+    """Calculator GUI implemented as a Python class.
+    Dynamically set up based upon unit category selection."""
     def __init__(self, window, parent, unit_cat, font):
         """Calculator widget structure to be placed into a container (frame)."""
         super().__init__(parent)
@@ -184,48 +195,48 @@ class CalculatorPage(ttk.Frame):
         # Container for entry label and field.
         self.lbl_value_cont = ttk.Label(parent)
         self.lbl_value_cont.grid(row=4, column=0)
-
         self.lbl_value = ttk.Label(self.lbl_value_cont, text="Érték:")
         self.lbl_value.pack()
 
         val_ent_value = (self.register(self.validate), '%P')
         self.ent_value = ttk.Entry(self.lbl_value_cont, font=(font, 16), width=30,
-                                   textvariable=self.input_value, validate="all", validatecommand=val_ent_value)
+                                   textvariable=self.input_value,
+                                   validate="all", validatecommand=val_ent_value)
         self.ent_value.pack()
         self.ent_value.bind("<1>", self.click_delete)  # Left click clears field.
 
         # Container for info widgets.
         self.lbf_info = ttk.LabelFrame(parent, text="Rövid információ", labelanchor="n")
+        # Internal grid of self.lbf_info.
         self.lbf_info.grid(row=4, column=1, columnspan=2)
-
         self.lbf_info.grid_rowconfigure(0, weight=1, minsize=150)
         self.lbf_info.grid_rowconfigure(1, weight=1)
         self.lbf_info.grid_rowconfigure(2, weight=1, minsize=150)
         self.lbf_info.grid_columnconfigure(0, weight=1, minsize=450)
         self.lbf_info.grid_columnconfigure(1, weight=1)
-        self.lbf_info.grid_columnconfigure(2, weight=1, minsize=450)  # Internal grid of self.lbf_info.
-
+        self.lbf_info.grid_columnconfigure(2, weight=1, minsize=450)
+        # Separators.
         self.sep_info_vert = ttk.Separator(self.lbf_info, orient="vertical")
         self.sep_info_vert.grid(row=0, column=1, rowspan=3, sticky="ns")
 
         self.sep_info_hor = ttk.Separator(self.lbf_info, orient="horizontal")
-        self.sep_info_hor.grid(row=1, column=0, columnspan=3, sticky="we")  # Separators.
-
-        self.lbl_input_sys_info = ttk.Label(self.lbf_info, textvariable=self.input_sys_info, style="LF.TLabel",
-                                            justify="center", wraplength=400)
+        self.sep_info_hor.grid(row=1, column=0, columnspan=3, sticky="we")
+        # Labels.
+        self.lbl_input_sys_info = ttk.Label(self.lbf_info, textvariable=self.input_sys_info,
+                                            style="LF.TLabel", justify="center", wraplength=400)
         self.lbl_input_sys_info.grid(row=0, column=0)
 
-        self.lbl_output_sys_info = ttk.Label(self.lbf_info, textvariable=self.output_sys_info, style="LF.TLabel",
-                                             justify="center", wraplength=400)
+        self.lbl_output_sys_info = ttk.Label(self.lbf_info, textvariable=self.output_sys_info,
+                                             style="LF.TLabel", justify="center", wraplength=400)
         self.lbl_output_sys_info.grid(row=0, column=2)
 
-        self.lbl_input_unit_info = ttk.Label(self.lbf_info, textvariable=self.input_unit_info, style="LF.TLabel",
-                                             justify="center", wraplength=400)
+        self.lbl_input_unit_info = ttk.Label(self.lbf_info, textvariable=self.input_unit_info,
+                                             style="LF.TLabel", justify="center", wraplength=400)
         self.lbl_input_unit_info.grid(row=2, column=0)
 
-        self.lbl_output_unit_info = ttk.Label(self.lbf_info, textvariable=self.output_unit_info, style="LF.TLabel",
-                                              justify="center", wraplength=400)
-        self.lbl_output_unit_info.grid(row=2, column=2)  # Labels.
+        self.lbl_output_unit_info = ttk.Label(self.lbf_info, textvariable=self.output_unit_info,
+                                              style="LF.TLabel", justify="center", wraplength=400)
+        self.lbl_output_unit_info.grid(row=2, column=2)
 
         # Row 5 (Convert buttons and result)
         self.btn_convert = ttk.Button(parent, text="Váltás", command=self.calculate_button)
@@ -237,8 +248,8 @@ class CalculatorPage(ttk.Frame):
 
         self.lbl_result = ttk.Label(self.lbl_result_cont, text="Eredmény:")
         self.lbl_result.pack()
-
-        self.ent_result = ttk.Entry(self.lbl_result_cont, font=(font, 16, "bold"), justify="center", width=30,
+        self.ent_result = ttk.Entry(self.lbl_result_cont, font=(font, 16, "bold"),
+                                    justify="center", width=30,
                                     textvariable=self.result_value, state="readonly")
         self.ent_result.pack()
 
@@ -357,7 +368,7 @@ class CalculatorPage(ttk.Frame):
 def launch_main():
     """Launch app (main window, container, and menu)."""
     wdw_main = Window("Unit Converter - Mértékegységváltó", "1920x1080", True, True,
-                      "grey", True)
+                      "#1F2933", True)
     frm_menu = Container(wdw_main, 1920, 1080, "both", True, "#1F2933",
                          "#E4E7EB", "#151C23", "Helvetica")
     main_menu = Menu(wdw_main, frm_menu.cont, "Helvetica")
@@ -385,5 +396,5 @@ def back_to_menu(window, parent):
 
 # Display message when accidentally run:
 if __name__ == "__main__":
-    print("This file is a module of the \"Unit Converter for Historical Studies\" project. Launch \"main.pyw\" to "
-          "start the app.")
+    print("This file is a module of the \"Unit Converter for Historical Studies\" project."
+          "Launch \"main.pyw\" to start the app.")

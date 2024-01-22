@@ -6,6 +6,19 @@ All notable changes to this project will be documented in this file.
 The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.1.0/),
 and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
+## [0.1.1] - 2023.01.22
+
+### Added
+
+- New unit systems: Buda, Transylvanian dry volume, Bihar liquid volume.
+
+### Fixed
+
+- Corrected database errors.
+- Corrected folder structure.
+- Minor code touch-ups.
+- Minor errors in docs.
+
 ## [0.1.0] - 2023.01.14
 
 ### Added

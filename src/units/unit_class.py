@@ -5,7 +5,9 @@ Part of the "Unit Converter for Historical Studies" project by OperaVaria.
 
 Measurement unit class.
 
-The sources of unit values and background information are cited in the database file (unit_database.db).
+The sources of unit values and background information are cited
+in the database file (unit_database.db).
+
 The list of cited works can be found in "docs/Sources.md".
 """
 
@@ -32,5 +34,5 @@ class Unit:
 
 # Display message when accidentally run:
 if __name__ == "__main__":
-    print("This file is a module of the \"Unit Converter for Historical Studies\" project. Launch \"main.pyw\" to "
-          "start the app.")
+    print("This file is a module of the \"Unit Converter for Historical Studies\" project."
+          "Launch \"main.pyw\" to start the app.")

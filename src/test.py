@@ -17,6 +17,7 @@ from functionality.functions import set_act_objs
 
 
 class Test(unittest.TestCase):
+    """Unittests."""
     def test_calculation(self):
         """Test calculation accuracy and rounding."""
         # Values to input.
@@ -33,7 +34,8 @@ class Test(unittest.TestCase):
     def test_obj_setup_speed(self):
         """Test the speed of the active object creation process."""
         # Preparations.
-        category_list = ["Hosszúság", "Terület", "Súly", "Darabmérték", "Szárazmérték", "Folyadékmérték"]
+        category_list = ["Hosszúság", "Terület", "Súly",
+                         "Darabmérték", "Szárazmérték", "Folyadékmérték"]
         self.act_cat = random.choice(category_list)
         self.sys_name_list = []
         # Function execution and timing.

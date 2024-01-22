@@ -28,7 +28,7 @@ units are added for reference. The converter uses the Tkinter GUI toolkit with t
 built with the SQLite database engine.
 
 All information is based on reliable academic literature, and their origin is indicated in the database. The list of
-consulted sources can be found both in the database file itself (src/units/unit_database.db), as well as in the
+consulted sources can be found in the database file itself (src/units/unit_database.db), as well as in the
 "docs/Sources.md" document. The contents of the database is also accessible in .csv format in the "docs/csv" folder.
 
 New unit systems are continuously added.
